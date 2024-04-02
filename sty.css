@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* font-family: 'Merriweather', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  ul {
+    list-style: none;
+  }
+
+  body {
+    font-family: 'Merriweather', serif;
+  
+
+}  
+
+/* ----- nav Section ----- */
+
+.header {
+    background-color: #ffeaff; 
+    background: rgba(19, 22, 26, .0.7);
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    min-height: 60px;
+
+}
+
+.navbar-brand {
+
+}
+
+
+
+.navbar-brand img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 220px;
+    display: block;
+}
+
+.nav {
+
+}
+
+.nav_list  {
+    display: flex;
+    column-gap: 20px;
+}
+
+.nav_item  {
+
+}
+
+
+.nav_link  {
+
+color: rgba(255, 255, 255 0.75);
+font-size: 15px;
+padding: 7px 14px;
+
+}
+
+.nav_link:hover,
+.dropdown:hover .nav_link {
+    color: white;
+    color: red;
+    background-color: rgba(255, 255 255 0.1);
+    background-color: black;
+   
+    }
+
+    
+.dropdown {
+    position: relative;
+    font-size: 14px;
+}
+
+
+
+.dropdown:hover .dropdown_list {
+    display: block;
+}
+
+.dropdown_list,
+.submenu_list {
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 130%;
+    min-width: max-content;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+
+}
+
+    
+.dropdown_item, 
+.submenu_item {
+    padding: 10px 15px;
+    cursor: pointer;
+    
+}
+
+.dropdown_item:hover,
+.submenu_item:hover {
+   background-color: rgba(234, 234, 234);
+    
+    
+}
+
+    
+.dropdown_link {
+    
+}  
+
+
+.submenu {
+position: relative;
+}
+
+
+.submenu:hover .submenu_list {
+    display: block;
+ }
+ 
+
+   
+ /* This depends on which side you want to open it */
+ .submenu_list {
+    top: 0;
+    left: 100%;
+ }
+  
+  
+ /* This depends on which side you want to open it */
+ /* .submenu_list {
+    top: 0;
+    left: initial;
+    right: 100%;
+ } */
+
+
+ /* media queries */
+@media (max-width: 1470px) {
+   
+    .dropdown_list { 
+        left: initial;
+        right: 0;
+    }
+
+     /* This depends on which side you want to open it opposite to the top entry */
+    .submenu_list {
+        left: initial;
+        right: 100%;
+    }
+}
+
+
+
+
+@media (max-width: 650px) {
+   
+         .header_content {
+            flex-direction: column;
+            row-gap: 18px;
+            padding: 25px 0;
+            position: relative;
+    
+         }
+
+         .nav_list  {
+    
+            column-gap: 10px;
+        }  
+
+        .dropdown { 
+           position: initial;
+        }
+
+        .dropdown_list { 
+            width: 100%;
+            top: 100%;
+            text-align: center;
+        }
+   
+/* also changes depending on the side on normal view */
+        .submenu_list {
+            width: 100%;
+            top: 100%;
+            left: 0;
+            right: initial;
+
+        }
+    }
+
+
+@media max-width
