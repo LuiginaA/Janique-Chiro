@@ -1,18 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
-/* font-family: 'Merriweather', serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-/* font-family: 'Lato', sans-serif; */
-
-/* ---------------------------------Special paddings/margins/text */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 
 a {
     text-decoration: none;
@@ -22,65 +12,12 @@ li {
     list-style: none;
   }
 
-/* :root { */
-    --primary-clr: #FFEAE6;
-    --background-clr: #fefefe; 
-    --secondary-clr: #232949;
-   
-    --txt-clr-1: #212529;
-    --txt-clr-2: #fefefe;
 
-    --bg-clr: ;
-    --accent-clr: ;
-
-    --container-width:90%;
-
-    --ff-1: Merriweather, sans-serif;
-    --ff-2: 'Lato', sans-serif;
-
-  /* font families */
-  --ff-base: "IBM Plex Sans", sans-serif;
-  --ff-accent: "Young Serif", serif;
-
-    --fw-l: 300;
-    --fw-n: 400;
-    --fw-m: 500;
-    --fw-sb: 600;
-    --fw-b: 700;
-    --fw-xb: 800;
-
-    --fs-1: 3.5rem;       
-    --fs-2: 3rem;         
-    --fs-3: 2.3rem;       
-    --fs-4: 2rem;         
-    --fs-5: 1.8rem;       
-    --fs-6: 1.6rem;  
-    --fs-p: 1.5rem;    
-
-    --shadow: ;
-    --box-shadow-1: 1.5rem 1.5rem 1rem rgba(0, 0, 0, .9);
-    --box-shadow-2: 2.5rem 2.5rem 1rem rgba(0, 0, 0, .9);
-    --box-shadow-3: 0 5px 35px rgba(0,0,0,0.15);
-    --br-1: 25px;
-    --br-2: 25%;
-
-    --lh-1: 1.5rem;
-    --lh-2: 2rem;
-    --line-height-3: 5rem;
-}
-
-html {
-    scroll-behavior: smooth;
-
-    font-size: 62.5%;  
-    /* This % changes the normal base size of 16px to 10px --- 21px = 2.1rem (because 21 x 10 = 2.1rem */
-}
-
-
-body {
+  body {
     min-height: 100vh; 
-    background-color: #232949; 
-
+    background-color: #fefefe;
+    background: var(--clr-bg);
+    background-color: #f0f0f0;
 
     letter-spacing: 1.25px;
     text-align: center;
@@ -91,59 +28,23 @@ body {
 
 }  
 
-ection {
- 
-}
-
-
-ontent {
-    width: min(500px, 70%);
-}
-
-
-p {
-    letter-spacing: 1.25px;
-    line-height: 3rem;
-    text-align: center;
-    font-size: clamp(200px, 50%, 20rem);
-    font-size: clamp(2rem, 5vw, 5rem);
-    font-size: clamp(1rem, 1.25vw, 1.255rem);
-}
-
-
-#EBEBEB
-#F1E6E0
-#FBDCD7
-#F2DBD5
-#F7D8DE
-#EFCEC9 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+color: #6F8E88;         color: #999B84;
+color: #F2DED7;         color: #F4EEED;
+color: #DBCFC3;         color: #EFD9D1;
+color: #D3E3D6;         color: #DDB7AAB;
+color: #EFC5B9;
+color: #F8F3EF;
 /* --------------------------------- Normal Styles */
 
 /* ----- Fixed Topnav Section ----- */
-/* ----- Fixed Topnav Section ----- */
+
+
+
 
 .topNav {
-    background-color:red;  
+    background-color: var(--secondary-clr); 
+    background:#6F8E88; 
+
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -162,14 +63,17 @@ p {
 } 
 
 .container-top {
+    background-color: #212529;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center; 
-    margin: 5px auto 5px auto;
+    margin: 0 auto 5px auto;
+    padding: 20px;
     max-height: 25px;
     width: 100%;
 } 
+
 
 .top-bar_content {
     width: 90%; 
@@ -188,45 +92,21 @@ p {
 }
 
 .top-bar_content i { 
-    color:#FBDCD7;
-
+    color:  var(--primary-clr);
+    color: #999B84;
     margin-right: 5px;
+ 
 }
 
 .top-bar_content p {    
     font-family: var(--ff-1);
     font-size: var(--fs-p); 
     font-weight: var(--fw-b); 
-    color: #FBDCD7;
-    color: #212529;
-
+    color:  var(--primary-clr);
+    color: #999B84;
     font-style: italic;
     margin: 5px;
     padding: 8px; 
-}
-
-/* ----- Fixed Navbar and Logo Section ----- */
-
-.navbar {
-    background-color: #EBEBEB;
-
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start; 
-    width: 100%; 
-    margin: 0 auto 0 auto; 
-    padding: 10px 30px 0px 30px;  
-    z-index: 1000;
-} 
-
-.cont-nav  {
-    display: flex;
-    flex-direction: column; 
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 1000;
 }
 
 .navbar-brand {   
@@ -274,29 +154,45 @@ p {
     justify-self: center;
     align-self: center; 
     color: #212529;
+    color: red;
 } 
 
-.btn {
-    border: 2px solid #212529;
-    box-shadow: 2px 2px #3e8e41;  
-    width: 4em;
-    height: 4em;
-}
 
-.btn i {
-    color: var(--secondary-clr);
+
+/* ----- Fixed Navbar and Logo Section ----- */
+
+.navbar {
+    background-color: var(--primary-clr); 
+    background-color:#D3E3D6;
+    background-color:#6F8E88; 
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    text-align: center;   
+    justify-content: flex-start; 
+    width: 100%; 
+    margin: 0 auto 0 auto; 
+    padding: 10px 30px 0px 30px;  
+    z-index: 1000;
+} 
+
+.cont-nav  {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
 }
 
-/* ----- Sidebar and Sidebar Header Section ----- */
-
+.navbar-nav-scroll {
+    height: 130%;
+}
 ul.navbar-nav {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 0px 50px 10px 10px;  
+    padding: 0px 50px 10px 10px; 
+    align-items: center; 
+    justify-content: space-evenly;
 }
 
 .nav-item .nav-link  {
@@ -315,14 +211,37 @@ ul.navbar-nav {
 .nav-link.active:hover,
 .nav-link:hover {
     color: #fff;
-    /* background-color: rgba(0,0,0,0.15); */
+    color: aqua;
+    background-color: rgba(0,0,0,0.15);
 } 
+
+.navbar-toggler {
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 5px;
+    border: 2px solid #212529;
+    box-shadow: 2px 2px #3e8e41; 
+}
+
+.navbar-toggler i {
+    width: 24px;
+    font-size: 2rem; 
+    font-weight: 600; 
+    justify-self: center;
+    align-self: center; 
+    color: #212529;
+    padding-right: 30px;
+} 
+
+
 
 /* ----- Dropdown Section ----- */
 
 .nav-item:hover, 
 .dropdown:hover .nav-link {
     color: #fff;
+    color: coral;
     background-color: rgba(0,0,0,0.15); 
 } 
 
@@ -336,8 +255,10 @@ ul.navbar-nav {
     display: block;
 }
 
-.dropdown-menu {
+.dropdown-menu,
+.submenu-menu {
     background: #FFEAE6;
+    background: rgb(68, 255, 0);
     position: absolute;
     left: 0;  
     top: 100%;
@@ -347,33 +268,32 @@ ul.navbar-nav {
     text-align: left;
 }
 
-.submenu-menu {
-    background: #FFEAE6;
-    position: absolute;
-    left: 0;  
-    top: 100%;
-    min-width: max-content; 
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
-    display: none;
-    text-align: left;
-}
+/* .dropdown-menu .submenu {
+ 
+
+    left: 100%;
+    top: 0;
+} */
 
 .dropdown-item,
 .dropdown-link {
     color: #232949;
+    color: yellow;
 }
 
 .submenu-item,
 .submenu-link{
     color: #232949;
+    color: chartreuse ;
 }
 
-.dropdown-item {
+.dropdown-item,
+.submenu-item {
     padding: 10px 12px 10px 8px; 
     cursor: pointer;
 }
 
-.submenu-item {
+submenu-item {
     padding: 10px 12px 10px 8px; 
     margin-left: -20px;
     margin-top: 8px;
@@ -398,3 +318,53 @@ ul.navbar-nav {
     top: 0;
     left: 100%;    
 }  
+
+
+
+/*--------------Media queries */
+
+
+@media (max-width: 1470px) {
+    .dropdown-menu {
+      left: initial;
+      right: 0;
+    } 
+ 
+    .submenu-menu {  
+        /* This may need to be djusted if on the main nav it opens on the opposite side */
+        left: initial;
+        right: 100%;
+      } 
+ /* This adjusts the size: of the dropdown box to accomdate more txt */
+ 
+ }
+ 
+ 
+ @media (max-width: 650px) {
+    .nav_list { 
+        column-gap: 10px;
+    } 
+ 
+    
+    .dropdown {
+      position: initial;
+    }
+ 
+    .dropdown-menu {
+        width: 100%;
+        top: 100%;
+        text-align: center;
+    }
+ 
+    
+    .submenu-menu {
+     width: 100%;  
+     top: 100%;
+     left: 0;
+     right: initial;
+    }
+
+ }
+ 
+ 
+
