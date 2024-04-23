@@ -115,7 +115,7 @@ p {
 /* ----- Fixed Topnav Section ----- */
 
 .topNav {
-    background-color: var(--secondary-clr);  
+    background-color: var(--secondary-clr); 
     display: flex;
     flex-direction: row;
     align-items: center;
